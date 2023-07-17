@@ -1,79 +1,60 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+>**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected unitl refreshed/restarted.
+This mobile application is built by using React Native framework.
 
-## Step 1: Start the Metro Server
+## Setup
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Note: If you don't have Homebrew installed please install it by running the following command in your terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-To start Metro, run the following command from the _root_ of your React Native project:
+1. Clone the project from the github repo: https://github.com/AJ-ANUJ/Profile_Page_App in to your machine using the following command:git clone <repo_url>
 
-```bash
-# using npm
-npm start
+2. Navigate to the cloned repository
 
-# OR using Yarn
-yarn start
-```
+3. Install Node.js
+   Steps to install:
+      1. Run the following command in the terminal: brew install node
 
-## Step 2: Start your Application
+4. Install CocoaPods
+   Steps to install:
+      1. This will require Ruby version >= 2.7.0, please use ruby version manager like rbenv to set the ruby version to >=2.7.0 if not already set.
+         Commands to run for it:
+            a. brew install rbenv
+            b. if bash shell: echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+               if zsh shell: echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+            c. if bash: source ~/.bash_profile
+               if zsh: source ~/.zshrc
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+      2. Run the following command in the terminal: sudo gem install cocoapods
+ 
+5. Install react-navigation/native library
+   Steps to install:
+      1. Run the following command: npm install @react-navigation/native
 
-### For Android
+6. Install react-navigation/native-stack
+   Steps to install:
+      1. Run the following command: npm install @react-navigation/native-stack
 
-```bash
-# using npm
-npm run android
+7. react-native-image-picker
+   Steps to install:
+      1. Run the following command: npm install react-native-image-picker
 
-# OR using Yarn
-yarn android
-```
+9. react-native-vector-icons
+   Steps to install:
+      1. Run the following command: npm install react-native-vector-icons
 
-### For iOS
+10. Run the following cmd in the project root folder: Npx pod-install
 
-```bash
-# using npm
-npm run ios
+11. Xcode: Xcode is needed as it provides the simulators for testing and debugging iOS and macOS apps on various virtual devices.
+   Steps to install:
+      1. Please install/update the Xcode from the App store.
 
-# OR using Yarn
-yarn ios
-```
+Once the above steps for setup are done, the app is ready to be used in the simulator.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Steps to start the app:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+1. If you want any specific device to be used as simulator, please open that particular device in the simulator and then the run the command to start the app.
+2. To start the app in the default device set in the simulator, run the command in the project root folder directly.
+3. Command to run in the project root folder directly: npx react-native run-ios
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Note: I have created this app by working with iphone 11 simulator.
