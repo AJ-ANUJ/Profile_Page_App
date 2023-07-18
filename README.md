@@ -1,61 +1,69 @@
 # Getting Started
 
->**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected unitl refreshed/restarted.
-The application supports both portrait and landscape(left/right) orientation modes.
+>**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected unitl refreshed/restarted.<br>
+The application supports both portrait and landscape(left/right) orientation modes.<br>
 This mobile application is built by using React Native framework.
 
-## Setup
+## Setup(for running on MacOS)
 
-Note: If you don't have Homebrew installed please install it by running the following command in your terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+>**Note**: If you don't have **Homebrew** installed please install it by running the following command in your terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 1. Clone the project from the github repo: https://github.com/AJ-ANUJ/Profile_Page_App in to your machine using the following command:git clone <repo_url>
 
-2. Navigate to the cloned repository
+2. Navigate to the cloned repository.
 
-3. Install Node.js
-   Steps to install:
-      1. Run the following command in the terminal: brew install node
+3. Xcode: Xcode is needed as it provides the simulators for testing and debugging iOS and macOS apps on various virtual devices.<br>
 
-4. Install CocoaPods
-   Steps to install:
-      1. This will require Ruby version >= 2.7.0, please use ruby version manager like rbenv to set the ruby version to >=2.7.0 if not already set.
-         Commands to run for it:
-            a. brew install rbenv
-            b. if bash shell: echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-               if zsh shell: echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-            c. if bash: source ~/.bash_profile
-               if zsh: source ~/.zshrc
+Steps to install(if not already installed):
 
-      2. Run the following command in the terminal: sudo gem install cocoapods
- 
-5. Install react-navigation/native library
-   Steps to install:
-      1. Run the following command: npm install @react-navigation/native
+   1. Please install/update the Xcode from the App store.
 
-6. Install react-navigation/native-stack
-   Steps to install:
-      1. Run the following command: npm install @react-navigation/native-stack
+4. Install **Node.js**<br>
 
-7. react-native-image-picker
-   Steps to install:
-      1. Run the following command: npm install react-native-image-picker
+Steps to install:
 
-9. react-native-vector-icons
-   Steps to install:
-      1. Run the following command: npm install react-native-vector-icons
+   1. Run the following command in the terminal: **brew install node**
 
-10. Run the following cmd in the project root folder: Npx pod-install
+5. Install **CocoaPods**
 
-11. Xcode: Xcode is needed as it provides the simulators for testing and debugging iOS and macOS apps on various virtual devices.
-   Steps to install:
-      1. Please install/update the Xcode from the App store.
+Steps to install:
+
+   1. Run the following command in the terminal: **brew install cocoapods**
+
+6. Install **react-navigation/native** library
+
+Steps to install:
+
+   1. Run the following command: **npm install @react-navigation/native**
+
+7. Install **react-navigation/native-stack** library
+
+Steps to install:
+
+   1. Run the following command: **npm install @react-navigation/native-stack**
+
+8. Install **react-native-image-picker** library
+
+Steps to install:
+
+   1. Run the following command: **npm install react-native-image-picker**
+
+9. Install **react-native-vector-icons** library
+
+Steps to install:
+
+   1. Run the following command: **npm install react-native-vector-icons**
+
+10. Run the following cmd in the project root folder: **npx pod-install**
 
 Once the above steps for setup are done, the app is ready to be used in the simulator.
 
+  
 ## Steps to start the app:
 
-1. If you want any specific device to be used as simulator, please open that particular device in the simulator and then the run the command to start the app.
-2. To start the app in the default device set in the simulator, run the command in the project root folder directly.
-3. Command to run in the project root folder directly: npx react-native run-ios
+  
+1. If you want any specific device to be used as simulator, please open that particular device in the simulator by using Xcode and then run the below given command to start the app.
 
-<**Note** I have created this app by working with iphone 11 simulator.
+2. To start the app in the default device set in the simulator, run the below given command in the project root folder directly.
+
+3. Command to run in the project root folder to start the app: npx react-native run-ios
