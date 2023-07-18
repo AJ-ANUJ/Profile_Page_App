@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {SafeAreaView, View, Text, TextInput, StyleSheet, TouchableOpacity, Button} from "react-native";
+import {SafeAreaView, View, Text, TextInput, StyleSheet, TouchableOpacity, Button, ScrollView} from "react-native";
 import DataContext from "./SharedDataContext";
 
 const Name = ({navigation}) => {
@@ -32,7 +32,8 @@ const Name = ({navigation}) => {
     }
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={{backgroundColor: 'white', flex:1}}>
+        <SafeAreaView style={styles.container}>
             <Text style={styles.text}>What is your name?</Text>
             <View style={styles.container1}>
                 <View style={{marginRight:10}}>
@@ -55,7 +56,8 @@ const Name = ({navigation}) => {
                     <Text style={{fontSize:20,fontWeight: 'bold',alignSelf:'center'}}>Update</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </SafeAreaView>
+        </ScrollView>
     );
 }
 
@@ -65,15 +67,17 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     container1: {
-        position: 'relative',
-        top: 150,
+        // position: 'relative',
+        // top: 150,
+        marginTop: 80,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
     },
     container2: {
-        position: 'relative',
-        top: 250,
+        // position: 'relative',
+        // top: 250,
+        marginTop: 80,
     },
     text:{
         fontSize: 32,
@@ -81,8 +85,9 @@ const styles = StyleSheet.create({
         color: '#333333',
         marginBottom: 5,
         alignSelf: 'center',
-        position: 'relative',
-        top: 100,
+        // position: 'relative',
+        // top: 100,
+        marginTop: 100,
     },
     input: {
         height: 40,

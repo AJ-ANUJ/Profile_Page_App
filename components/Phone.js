@@ -21,21 +21,23 @@ const Phone = ({navigation}) => {
     }
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={{backgroundColor: 'white', flex:1}}>
+        <SafeAreaView style={styles.container}>
             <Text style={styles.text}>What is your phone number?</Text>
-            <View style={{position: 'relative', top: 200}}>
+            <View style={{marginTop: 80}}>
                 <Text style={{fontWeight:'bold',alignSelf: 'center', color: 'black',fontSize:16}}>Your phone number</Text>
                 <TextInput style={styles.input} placeholder={phone}
                 onChangeText={handleChange}>    
                 </TextInput>
             </View>
             
-            <View style={{position: 'relative', top: 250}}>
+            <View style={{marginTop: 80}}>
                 <TouchableOpacity style={styles.button} onPress={handleUpdate}>
                     <Text style={{fontSize:20,alignSelf:'center', fontWeight: 'bold'}}>Update</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </SafeAreaView>
+        </ScrollView>
     );
 }
 
@@ -45,8 +47,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },    
     text:{
-        position: 'relative',
-        top: 150,
+        // position: 'relative',
+        // top: 150,
+        marginTop: 100,
         alignSelf: 'center',
         fontSize: 28,
         fontWeight: 'bold',

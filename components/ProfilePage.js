@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import {View, Button, TouchableOpacity, StyleSheet, Text, Image} from 'react-native';
+import {SafeAreaView, View, ScrollView, Button, TouchableOpacity, StyleSheet, Text, Image} from 'react-native';
 import DataContext from './SharedDataContext';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -30,7 +30,8 @@ const ProfilePage = ({navigation}) => {
     };
 
     return (
-        <View style={{backgroundColor: 'white', flex:1}}>
+        <ScrollView style={{flex:1, backgroundColor:'white'}}>
+        <SafeAreaView style={{backgroundColor: 'white', flex:1}}>
             <Text style={{
                 color: 'purple',
                 alignSelf: 'center',
@@ -39,39 +40,42 @@ const ProfilePage = ({navigation}) => {
                 marginTop: 10,
                 marginBottom: 10,
             }}>Edit Profile</Text>
-            <TouchableOpacity style={styles.container} onPress={handleImagePress}>
+            {/* <TouchableOpacity style={styles.container} onPress={handleImagePress}> */}
+            <TouchableOpacity style={{backgroundColor: 'white', marginBottom:10,
+        padding: 10,borderRadius: 5, width:160, height:160, alignSelf:'center'}} onPress={handleImagePress}>
                 <Image style={styles.profilePhoto} source={imgSource}></Image>
                 <Icon style={styles.editIcon} name='pencil-square-o' size={25} color='blue'></Icon>
             </TouchableOpacity>
             <TouchableOpacity style={styles.container1} onPress={handleNamePress}>
-                <View>
+                <View style={{width:'70%'}}>
                     <Text style={styles.headingText}>Name</Text>
                     <Text style={styles.text}>{name}</Text>
                 </View>
                 <Icon style={styles.arrowIcon} color='#87CEFA' name='chevron-right' size={25}></Icon>
             </TouchableOpacity>
             <TouchableOpacity style={styles.container1} onPress={handlePhonePress}>
-                <View>
+                <View style={{width:'70%'}}>
                     <Text style={styles.headingText}>Phone</Text>
                     <Text style={styles.text}>{phone}</Text>
                 </View>
                 <Icon style={styles.arrowIcon} color='#87CEFA' name='chevron-right' size={25}></Icon>
             </TouchableOpacity>
             <TouchableOpacity style={styles.container1} onPress={handleEmailPress}>
-                <View>
+                <View style={{width:'70%'}}>
                     <Text style={styles.headingText}>Email</Text>
                     <Text style={styles.text}>{email}</Text>
                 </View>
                 <Icon style={styles.arrowIcon} color='#87CEFA' name='chevron-right' size={25}></Icon>
             </TouchableOpacity>
             <TouchableOpacity style={styles.container1} onPress={handleTMAYPress}>
-                <View>
+                <View style={{width:'70%'}}>
                     <Text style={styles.headingText}>Bio</Text>
                     <Text style={styles.text}>{tmay}</Text>
                 </View>
                 <Icon style={styles.arrowIcon} color='#87CEFA' name='chevron-right' size={25}></Icon>
             </TouchableOpacity>
-        </View>
+        </SafeAreaView>
+        </ScrollView>
     );
 };
 
@@ -110,13 +114,16 @@ const styles = StyleSheet.create({
     },
     editIcon: {
         position: 'absolute',
-        top: 10,
-        left: 240,
+        // top: 10,
+        // left: 240,
+        top: '8%',
+        left: '80%',
         backgroundColor: 'white',
     },
     arrowIcon: {
         position: 'absolute',
-        right:0,
+        // right:0,
+        right:24,
         bottom:15,
         backgroundColor: 'white',
     },

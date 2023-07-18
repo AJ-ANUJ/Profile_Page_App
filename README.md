@@ -1,6 +1,7 @@
 # Getting Started
 
 >**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected unitl refreshed/restarted.
+The application supports both portrait and landscape(left/right) orientation modes.
 This mobile application is built by using React Native framework.
 
 ## Setup
@@ -51,10 +52,10 @@ Note: If you don't have Homebrew installed please install it by running the foll
 
 Once the above steps for setup are done, the app is ready to be used in the simulator.
 
-Steps to start the app:
+## Steps to start the app:
 
 1. If you want any specific device to be used as simulator, please open that particular device in the simulator and then the run the command to start the app.
 2. To start the app in the default device set in the simulator, run the command in the project root folder directly.
 3. Command to run in the project root folder directly: npx react-native run-ios
 
-Note: I have created this app by working with iphone 11 simulator.
+<**Note** I have created this app by working with iphone 11 simulator.
