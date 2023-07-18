@@ -1,6 +1,7 @@
 # Getting Started
 
->**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected unitl refreshed/restarted.<br>
+>**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected until refreshed/restarted.<br>
+Application allows users to update their profile pic, name, phone number, email and bio.<br>
 The application supports both portrait and landscape(left/right) orientation modes.<br>
 This mobile application is built by using React Native framework.
 
@@ -14,45 +15,45 @@ This mobile application is built by using React Native framework.
 
 3. Xcode: Xcode is needed as it provides the simulators for testing and debugging iOS and macOS apps on various virtual devices.<br>
 
-Steps to install(if not already installed):
+   - Steps to install(if not already installed):
 
-   1. Please install/update the Xcode from the App store.
+      1. Please install/update the Xcode from the App store.
 
 4. Install **Node.js**<br>
 
-Steps to install:
+   - Steps to install:
 
-   1. Run the following command in the terminal: **brew install node**
+      1. Run the following command in the terminal: **brew install node**
 
 5. Install **CocoaPods**
 
-Steps to install:
+   - Steps to install:
 
-   1. Run the following command in the terminal: **brew install cocoapods**
+      1. Run the following command in the terminal: **brew install cocoapods**
 
 6. Install **react-navigation/native** library
 
-Steps to install:
+   - Steps to install:
 
-   1. Run the following command: **npm install @react-navigation/native**
+      1. Run the following command: **npm install @react-navigation/native**
 
 7. Install **react-navigation/native-stack** library
 
-Steps to install:
+   - Steps to install:
 
-   1. Run the following command: **npm install @react-navigation/native-stack**
+      1. Run the following command: **npm install @react-navigation/native-stack**
 
 8. Install **react-native-image-picker** library
 
-Steps to install:
+   - Steps to install:
 
-   1. Run the following command: **npm install react-native-image-picker**
+      1. Run the following command: **npm install react-native-image-picker**
 
 9. Install **react-native-vector-icons** library
 
-Steps to install:
+   - Steps to install:
 
-   1. Run the following command: **npm install react-native-vector-icons**
+      1. Run the following command: **npm install react-native-vector-icons**
 
 10. Run the following cmd in the project root folder: **npx pod-install**
 
