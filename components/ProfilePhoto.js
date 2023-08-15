@@ -7,7 +7,7 @@ import {launchImageLibrary} from 'react-native-image-picker';
 const ProfilePhoto = ({navigation}) => {
     const {profilePhoto, setProfilePhoto} = useContext(DataContext);
     const isLocalPath = profilePhoto && profilePhoto.startsWith('./');
-    const imgSource = isLocalPath?require('./ag.png'):{ uri: profilePhoto};
+    const imgSource = isLocalPath?require('./default_pic.png'):{ uri: profilePhoto};
     const [msg, setMsg] = useState('');
     const [showView, setShowView] = useState(false);
     

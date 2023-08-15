@@ -8,7 +8,7 @@ const ProfilePage = ({navigation}) => {
         setEmail, tmay, setTMAY, profilePhoto, setProfilePhoto} = useContext(DataContext);
     
     const isLocalPath = profilePhoto && profilePhoto.startsWith('./');
-    const imgSource = isLocalPath?require('./ag.png'):{ uri: profilePhoto};
+    const imgSource = isLocalPath?require('./default_pic.png'):{ uri: profilePhoto};
     const handleNamePress = () => {
         navigation.navigate('Name');
     };

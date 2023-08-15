@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import DataContext from './SharedDataContext';
 
 const DataProvider = ({ children }) => {
-    const[name, setName] = useState('Approachable Geek');
+    const[name, setName] = useState('First Last');
     const[phone, setPhone] = useState('xxx-xxx-xxxx');
-    const[email, setEmail] = useState('approachablegeek@example.com');
-    const[tmay, setTMAY] = useState('We build software humans love to use. We\'re software development geeks who speak “business”, so you don\'t have to speak “geek”.');
-    const[profilePhoto, setProfilePhoto] = useState('./ag.png');
+    const[email, setEmail] = useState('example@example.com');
+    const[tmay, setTMAY] = useState('Hello!');
+    const[profilePhoto, setProfilePhoto] = useState('./default_pic.png');
 
     return (
         <DataContext.Provider value={{ name, setName, phone, setPhone,
