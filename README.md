@@ -1,3 +1,6 @@
+<img src="https://github.com/AJ-ANUJ/Profile_Page_App/assets/26610301/40bdbfd2-0343-4ac3-895d-a92e69a3aabc" width="200" height="400">
+
+
 # Getting Started
 
 >**Note** This mobile application has the functionality of a profile page. Data does not get saved in the database, but the application functions as expected until refreshed/restarted.<br>
